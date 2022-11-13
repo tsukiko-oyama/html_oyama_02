@@ -1,0 +1,310 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color:#333333;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img{
+    max-width:100%;
+    height: auto
+}
+/* なぜトップ画だけ伸び縮みするのか？ */
+.text-center{
+    text-align:center;
+}
+
+.wrapper{
+    width: 1200px;
+    margin:auto;
+}
+
+.hover1{
+    display: inline-block;
+	padding: 0.6em 2em;
+	margin: 0 0 1em;;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.hover1:hover {
+	opacity: 0.6;
+}
+
+.hover2{box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+	display: inline-block;
+	padding: 0.6em 2em;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.hover2:hover {
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+	transform: translateY(-0.1875em);
+}
+/********** header *****************/
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 121px;
+}
+
+.nav-list{
+    display:flex;
+}
+
+.nav-item{
+    margin:0 0 0 50px;
+}
+.nav-item>a{
+    font-size: 21px;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.wrapper-title{
+    position:relative;
+}
+.center1{
+    position:absolute;
+    top: 42%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.center2{
+    position:absolute;
+    top: 58%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 27px;
+}
+/************* about ***************/
+.about{
+    margin-top: 60px;
+}
+
+.about-title{
+    font-size: 24px;
+    color:#ffd61a;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.about-jptitle{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:60px;
+    font-size:18px;
+}
+.about-content{
+    text-align: center;
+    font-size:16px;
+    margin-bottom: 80px;
+}
+.about-content-space{
+    margin-top:40px;
+}
+.image-list{
+    /* 順番なぜ逆？ */
+    display: flex;
+    width:25%;
+}
+
+/**************course ***************/
+.course-title{  
+    margin-top: 60px;
+    margin-bottom:30px;
+    font-size: 24px;
+    color:black;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.course-subtitle{
+    margin-bottom:40px;
+    font-size:24px;
+    font-weight:bold;
+}
+.course-content{
+    margin-bottom: 60px;
+}
+.course-item{
+    display: flex;
+}
+.course-eyecatch{
+    width:600px
+}
+.course-content-left{
+    width:550px;
+    background-color:#fafafa;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+.course-content-right{
+    width:480px;
+    background-color:#fafafa;
+    padding-top: 120px;
+    padding-left: 120px;
+}
+/* width+paddingで600にするという考えでOKなのか */
+
+/*************** news *******************/
+
+.news-title{  
+    margin-top: 60px;
+    margin-bottom:30px;
+    font-size: 24px;
+    color:#ffd61a;
+    font-weight:bold;
+    text-transform: uppercase;
+    
+}
+
+.news-jptitle{
+    margin-bottom:60px;
+}
+.news-list{
+    display: flex;
+    justify-content:center;
+    margin-bottom:60px;
+    
+}
+.news-item{
+    width:300px;
+    margin-right:30px;
+    font-size: 14px;
+    /* 本文よりfont小さくないと収まらない */
+}
+.news-eyecatch{
+    width:300px;
+}
+
+.btn{
+    display:block;
+    width:300px;
+    margin: auto;
+    padding: 15px 0;
+    background-color: #ffd61a;
+    color: white;
+    font-size:18px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom:60px;
+}
+
+/* access */
+.access-wrapper{
+    background-color:#fafafa;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+.access-title{  
+    margin-top: 60px;
+    margin-bottom:30px;
+    font-size: 24px;
+    color:black;
+    font-weight:bold;
+}
+.access-jptitle{
+    margin-bottom:60px;
+
+}
+.access-map{
+    text-align:center;
+}
+.access-chart{
+    margin-top:60px;
+    display:flex;
+    justify-content:center
+}
+.access-right{
+    margin-right: 30px;
+    line-height: 2;
+}
+.access-left{
+    line-height: 2;
+}
+/* contact */
+.contact-title{  
+    font-size: 24px;
+    color:black;
+    font-weight:bold;
+    margin-top: 60px;
+}
+
+.contact-jptitle{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.contact-content-space1 {
+    margin-top: 30px;
+}
+.contact-content-space2 {
+    margin-bottom: 70px;
+}
+
+table{
+    margin:auto;
+    height:36px;
+    border: solid 1px;
+    border-color: #bfbfbf;
+    border-right:none;
+    border-left:none
+
+}
+th{
+    width:240px;
+    text-align: left;
+    padding-left: 16px;
+    border: solid 1px;
+    border-color: #bfbfbf;
+    border-left:none;
+    /* 詳細だけ下ぞろい */
+}
+td{
+    width: 400px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    border: solid 1px;
+    border-color: #bfbfbf;
+    border-right: none;
+}
+
+.tdwidth{
+    width:328px;
+
+}
+.btn2{
+    display:block;
+    width:300px;
+    margin: auto;
+    padding: 15px 0;
+    background-color: #ffd61a;
+    color: white;
+    border:none;
+    font-size:18px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom:140px;
+    /* なぜこちらはデフォでボーダー？ */
+}
+
+.footer-wrapper{
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: #707070;
+    color: white;
+
+}
+    
